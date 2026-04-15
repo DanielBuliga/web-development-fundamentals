@@ -1,0 +1,67 @@
+    <section id="section1">
+        <fieldset>
+            <legend>Informații generale</legend>
+            <h2 id="date"></h2>
+            <h2 id="location"></h2>
+            <h2 id="url"></h2>
+            <h2 id="browser"></h2>
+            <h2 id="os"></h2>
+        </fieldset>
+        
+    </section>
+
+    <section id="section2">
+        <h2>Desenează un dreptunghi</h2>
+        <label for="strokeColor">Culoare contur:</label>
+        <input type="color" id="strokeColor" value="#000000">
+
+        <label for="fillColor">Culoare umplere:</label>
+        <input type="color" id="fillColor" value="#ff0000">
+
+        <canvas id="myCanvas" width="800" height="400"></canvas>
+
+        <button onclick="clearCanvas()" id="clearCanvasButton">Eliberare pânză</button>
+    </section>
+
+    <section id="section3">
+        <fieldset>
+            <legend>Tabel dinamic</legend>
+
+            <label for="pozition">Poziția:</label>
+            <input type="number" id="pozition" min="1" placeholder="Introdu poziția la care dorești să adaugi o linie/coloană">
+    
+            <label for="bgColor">Culoare fundal:</label>
+            <input type="color" id="bgColor" value="#d0e4f1">
+    
+            <div id="invButtons">
+                <button onclick="insertRow()">Inserare linie</button>
+                <button onclick="insertColumn()">Inserare coloană</button>
+            </div>
+            
+    
+            <table id="myTable">
+                <tr>
+                    <th>Principiu</th>
+                    <th>Beneficiu</th>
+                    <th>Exemplu</th>
+                </tr>
+                <tr>
+                    <td>Hidratare corectă</td>
+                    <td>Menține funcțiile vitale și energia</td>
+                    <td>Minim 2L apă pe zi, ceaiuri fără zahăr</td>
+                </tr>
+                <tr>
+                    <td>Alimentație echilibrată</td>
+                    <td>Întărește imunitatea</td>
+                    <td>Legume, fructe, cereale integrale</td>
+                </tr>
+                <tr>
+                    <td>Mișcare zilnică</td>
+                    <td>Reduce stresul și crește rezistența</td>
+                    <td>30 min plimbare sau exerciții</td>
+                </tr>
+            </table>
+
+        </fieldset>
+
+    </section>

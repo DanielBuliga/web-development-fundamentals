@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE persoane SYSTEM "persoane.dtd">
+<persoane>
+    <persoana id="1">
+        <nume>Popescu</nume>
+        <prenume>Ion</prenume>
+        <varsta>23</varsta>
+        <email>popescu.ion@yahoo.com</email>
+        <telefon>0713245889</telefon>
+        <adresa>
+            <strada>Unirii</strada>
+            <numar>100</numar>
+            <localitate>Falticeni</localitate>
+            <judet>Suceava</judet>
+            <tara>Romania</tara>
+        </adresa>
+    </persoana>
+    <persoana id="2">
+        <nume>Anton</nume>
+        <prenume>Ioana</prenume>
+        <varsta>25</varsta>
+        <email>anton.ioana@yahoo.com</email>
+        <telefon>0713211178</telefon>
+        <adresa>
+            <strada>Libertatii</strada>
+            <numar>4A</numar>
+            <localitate>Radauti</localitate>
+            <judet>Suceava</judet>
+            <tara>Romania</tara>
+        </adresa>
+    </persoana>
+    <persoana id="3">
+        <nume>Popescu</nume>
+        <prenume>Maria</prenume>
+        <varsta>30</varsta>
+        <email>popescu.maria@yahoo.com</email>
+        <telefon>0713151671</telefon>
+        <adresa>
+            <strada>George Enescu</strada>
+            <numar>12</numar>
+            <localitate>Plopeni</localitate>
+            <judet>Suceava</judet>
+            <tara>Romania</tara>
+        </adresa>
+    </persoana>
+</persoane>

@@ -1,0 +1,73 @@
+<div class="svg-box">
+    <svg viewBox="0 0 600 450" id="svgComputer">
+        <defs>
+          <radialGradient id="heartGradient">
+            <stop offset="0%" stop-color="#880000"/>
+            <stop offset="100%" stop-color="#ff4d4d"/>
+          </radialGradient>
+    
+          <radialGradient id="smileyGradient" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="#fffde7" />
+            <stop offset="100%" stop-color="#ffeb3b" />
+          </radialGradient>
+    
+          <linearGradient id="snakeGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" stop-color="#a5d6a7" />
+            <stop offset="100%" stop-color="#2e7d32" />
+          </linearGradient>
+        </defs>
+    
+        <rect x="100" y="100" width="400" height="250" fill="#ccc" stroke="#888" stroke-width="4" rx="15" />
+        <rect id="screen" x="120" y="120" width="360" height="170" fill="black" rx="5" />
+        <rect x="250" y="360" width="100" height="20" fill="#999" rx="5" />
+        <rect x="230" y="380" width="140" height="15" fill="#777" rx="5" />
+    
+        <circle id="powerBtn" class="btn" cx="300" cy="330" r="14" fill="#666" stroke="#444" stroke-width="2" />
+        <line x1="300" y1="322" x2="300" y2="328" stroke="white" stroke-width="2" />
+    
+        <g id="content">
+         
+          <line x1="140" y1="140" x2="440" y2="140" class="line hidden" id="line0"/>
+          <line x1="140" y1="170" x2="380" y2="170" class="line hidden" id="line1"/>
+          <line x1="200" y1="195" x2="440" y2="195" class="line hidden" id="line2"/>
+          <line x1="140" y1="220" x2="280" y2="220" class="line hidden" id="line3"/>
+          <line x1="200" y1="245" x2="440" y2="245" class="line hidden" id="line4"/>
+    
+          <polyline points="390,165 400,170 410,155 420,175 430,165 440,160 450,165"
+                    class="pulse-line hidden" id="pulse" />
+    
+          <g>
+            <path id="heart" d="M 140 175 Q 150 160 160 175 Q 170 190 140 215 Q 110 190 120 175 Q 130 160 140 175 Z"
+                  fill="url(#heartGradient)" class="hidden pulse-heart" />
+          </g>
+          
+          
+          <g id="smiley" class="hidden">
+            <circle cx="340" cy="220" r="15" fill="url(#smileyGradient)" stroke="#fbc02d" stroke-width="2" />
+            <circle cx="335" cy="215" r="2" fill="#333" />
+            <circle cx="345" cy="215" r="2" fill="#333" />
+            <path d="M 335 225 Q 340 230 345 225" stroke="#333" stroke-width="2" fill="none" />
+          </g>
+    
+          
+          <g id="snake" class="hidden" transform="translate(170,240)">
+            
+            <polygon points="0,24 12,0 -12,0" fill="url(#snakeGradient)" />
+            
+            <rect x="-1.5" y="24" width="3" height="18" fill="url(#snakeGradient)" />
+           
+            <line x1="-10" y1="42" x2="10" y2="42" stroke="#2e7d32" stroke-width="4" />
+           
+            <path d="M 0 42 Q -10 32 0 22 Q 10 12 0 2" stroke="url(#snakeGradient)" stroke-width="3" fill="none"/>
+            <circle cx="0" cy="2" r="3" fill="#2e7d32" />
+          </g>
+         
+    
+        
+          <text id="powerMessage" class="text-style" fill="none" stroke="green">PRESS the power button!</text>
+          <text id="text1" class="text-style hidden" fill="lightgreen" font-size="15">Stay <tspan fill="none" stroke="green">Healthy</tspan>!</text>
+        </g>
+      </svg>
+
+</div>
+  

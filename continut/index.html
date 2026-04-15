@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ro">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Index</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" type="text/css" href="css/stil.css" />
+    <script src="js/script.js"></script>
+    <script src="js/persoane.js"></script>
+    <script src="js/inregistrare.js"></script>
+    
+    <script>
+        function schimbaContinut(resursa, jsFisier = null, jsFunctie = null)
+        {
+            var request;
+            if(window.XMLHttpRequest) {
+                request = new XMLHttpRequest();
+            }
+            request.onreadystatechange = function() {
+                if (request.status == 200) {
+                    document.getElementById("continut").innerHTML = request.responseText;
+                    
+                    if (resursa === "invat") {
+                        if (typeof getInfo === "function") getInfo();
+                        if (typeof Canvas === "function") Canvas();
+                    }
+
+                    if (resursa === "persoane") {
+                        if (typeof incarcaPersoane === "function") incarcaPersoane();
+                    }
+
+                    if (resursa === "desen") {
+                        if (typeof initDraw === "function") initDraw();
+                    }
+
+                    if (jsFisier) {
+                        var elementScript = document.createElement('script');
+                        elementScript.onload = function () {
+                            console.log("hello");
+                            if (jsFunctie) {
+                                window[jsFunctie]();
+                            }
+                        };
+                        elementScript.src = jsFisier;
+                        document.head.appendChild(elementScript);
+                    } else {
+                        if (jsFunctie) {
+                            window[jsFunctie]();
+                        }
+                    }
+                }
+            }
+
+            request.open("GET", resursa + ".html", true);
+            request.send();
+        }
+    </script>
+
+</head>
+
+<body onload="schimbaContinut('acasa')">
+    <nav>
+        <a onclick="schimbaContinut('acasa')">ACASĂ</a> |
+        <a onclick="schimbaContinut('despre')">DESPRE</a> |
+        <a onclick="schimbaContinut('inregistreaza', 'js/inregistrare.js', '' )">ÎNREGISTRARE</a> |
+        <a onclick="schimbaContinut('video')">VIDEO</a> |
+        <a onclick="schimbaContinut('desen')">DESEN</a> |
+        <a onclick="schimbaContinut('invat')">ÎNVĂȚ</a> |
+        <a onclick="schimbaContinut('persoane', 'js/persoane.js', 'incarcaPersoane')">PERSOANE</a> |
+        <a onclick="schimbaContinut('verifica', 'js/verifica.js', 'initVerify')">VERIFICĂ</a> |
+        <a onclick="schimbaContinut('cumparaturi', 'js/cumparaturi.js', 'adauga')">CUMPĂRĂTURI</a>
+
+    </nav>
+
+    <main id="continut">
+       
+    </main>
+
+    <footer>
+        <p>&copy; 2025 All rights reserved</p>
+    </footer>
+    
+
+</body>
+
+</html>

@@ -1,0 +1,123 @@
+<div style="text-align: center; max-width: 800px; margin: 0 auto; padding: 2em 1em;">
+
+    <h2 class="animated-title">Bine ai venit!</h2>
+
+    <section id="intro">
+        <p>
+            Scopul acestui site este să îți ofere sfaturi simple, dar eficiente, pentru a-ți îmbunătăți stilul de viață și a preveni
+            diverse probleme de sănătate. Vei găsi informații utile despre alimentație, hidratare, mișcare, somn și multe altele.
+            Indiferent dacă dorești să adopți obiceiuri sănătoase sau să găsești soluții pentru stres sau oboseală, suntem aici să te ghidăm.
+        </p>
+    </section>
+
+    <h3 style="margin-bottom: 1.5em;">Navighează prin secțiunile site-ului:</h3>
+
+    <div class="menu-section">
+        <div class="menu-box">
+            <h4>DESPRE</h4>
+            <p>Introducere în tematica site-ului: sfaturi de sănătate și echilibru.</p>
+        </div>
+        <div class="menu-box">
+            <h4>ÎNREGISTRARE</h4>
+            <p>Formular pentru creare cont și interacțiune cu utilizatorii.</p>
+        </div>
+        <div class="menu-box">
+            <h4>VIDEO</h4>
+            <p>Clipuri educative și inspiraționale pe teme de sănătate.</p>
+        </div>
+        <div class="menu-box">
+            <h4>DESEN</h4>
+            <p>Desen SVG creativ inspirat din tematica sănătății.</p>
+        </div>
+        <div class="menu-box">
+            <h4>ÎNVĂȚ</h4>
+            <p>Pagină interactivă: afișare informații, desen pe canvas, tabel dinamic.</p>
+        </div>
+        <div class="menu-box">
+            <h4>PERSOANE</h4>
+            <p>Vizualizarea datelor dintr-un fișier XML într-un tabel organizat.</p>
+        </div>
+        <div class="menu-box">
+            <h4>VERIFICĂ</h4>
+            <p>Verifică existența unui cont în baza de date.</p>
+        </div>
+        <div class="menu-box" style="margin-bottom: 4em;">
+            <h4>CUMPĂRĂTURI</h4>
+            <p>Simulează adăugarea produselor într-o listă de cumpărături.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Stiluri și efecte -->
+<style>
+    .animated-title {
+        font-size: 2.5em;
+        color: #6c94a3;
+        animation: fadeInScale 1.5s ease-in-out;
+        margin-bottom: 1em;
+    }
+
+    @keyframes fadeInScale {
+        0% {
+            opacity: 0;
+            transform: scale(0.7);
+        }
+        100% {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+
+    .menu-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-box {
+        width: 80%;
+        max-width: 600px;
+        background-color: #ffffff;
+        border: 2px solid #6c94a3;
+        border-radius: 10px;
+        padding: 1.2em 1.5em;
+        margin-bottom: 1.5em;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
+        text-align: center;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .menu-box:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    }
+
+    .menu-box h4 {
+        margin: 0;
+        color: #6c94a3;
+        font-size: 1.3em;
+    }
+
+    .menu-box p {
+        margin-top: 0.5em;
+        font-size: 0.95em;
+        color: #333;
+    }
+    #intro {
+        background-color: #f4f9fb;
+        border: 2px solid #b2c8d1;
+        border-radius: 12px;
+        padding: 2em 2.5em;
+        max-width: 850px;
+        margin: 0 auto 3em auto;
+        font-family: 'Segoe UI', 'Roboto', sans-serif;
+        box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+    }
+
+    #intro p {
+        color: #2f4f5a;
+        font-size: 1.15em;
+        line-height: 1.8;
+        text-align: center;
+    }
+</style>
